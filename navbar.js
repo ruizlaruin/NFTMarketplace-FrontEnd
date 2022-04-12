@@ -10,7 +10,7 @@ var navbar = `
         <ul class="nav navbar-nav pull-right">
             <li><a href="index.html">Home</a></li>
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Proyects<b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
                 <ul class="dropdown-menu">
                     <li><a href="sidebar-left.html">NFT's</a></li>
                     <li><a href="sidebar-left.html">Blockchain's</a></li>
