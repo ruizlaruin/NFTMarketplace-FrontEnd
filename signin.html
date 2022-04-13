@@ -52,17 +52,17 @@
 					<div class="panel panel-default">
 						<div class="panel-body">
 							<h3 class="thin text-center">Sign in to your account</h3>
-							<p class="text-center text-muted">Lorem ipsum dolor sit amet, <a href="signup.html">Register</a> adipisicing elit. Quo nulla quibusdam cum doloremque incidunt nemo sunt a tenetur omnis odio. </p>
+							<p class="text-center text-muted">You already have an account? Start session here! or if you want to create a new acc... <a href="signup.html">Register</a>  </p>
 							<hr>
 							
 							<form>
 								<div class="top-margin">
 									<label>Username/Email <span class="text-danger">*</span></label>
-									<input type="text" class="form-control">
+									<input type="text" class="form-control" minlength="3" maxlength="50" required>
 								</div>
 								<div class="top-margin">
 									<label>Password <span class="text-danger">*</span></label>
-									<input type="password" class="form-control">
+									<input type="password" class="form-control" pattern="(?=.*d)(?=.[a-z])(?=-[A-Z]).{8,}" title="must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" minlength="8" maxlength="30" required>
 								</div>
 
 								<hr>
