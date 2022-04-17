@@ -93,23 +93,22 @@
 									</div>
 								</div>
 								<div class="row top-margin ">
-									<div class="col-sm-6">
-										<input type="radio" class="form-control" name="acct-type" value="user" onchange="showBCDiv('project-form', this)" required>
-										<label>User (View Projects)</span></label>
-									</div>
-									<div class="col-sm-6">
-										<input type="radio" class="form-control" name="acct-type" value="client"
-											required>
-										<label>Client (Post Projects)</span></label>
-									</div>
-									<div class="col-sm-6">
+									<div class="col-lg-8">
+										<label class="checkbox">
+
+											<input type="checkbox"
+												onchange="document.getElementById('blockchain-fieldset').hidden = !this.checked">
+												<!--TODO: pagina page_terms.html-->
+											I want to share my project.
+										</label>
 									</div>
 								</div>
 
 								<hr>
 <!--Blockchain form-->
 
-							<div class="project-form" id="project-form" style="display: none;">
+							<div class="project-form">
+								<fieldset id="blockchain-fieldset" hidden>
 								<div class="row">
 									<div class="top-margin col-sm-12">
 										<label>Project Name<span class="text-danger">*</span></label>
@@ -203,7 +202,7 @@
 										<input type="text" class="form-control" required>
 									</div>
 								</div>
-
+							</fieldset>
 							</div>
 <!--Blockchain form ends-->
 								<div class="row top-margin col-sm-12">
